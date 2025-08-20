@@ -116,7 +116,7 @@ export default function LicensesPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Licenses</h1>
           <p className="text-muted-foreground">
-            Manage all your organization's licenses and permits
+            Manage all your organization&apos;s licenses and permits
           </p>
         </div>
         <Button asChild>
