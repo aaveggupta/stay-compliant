@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Stay-Compliant
+
+A comprehensive license management platform designed specifically for Indian businesses to track, manage, and automate their compliance requirements.
+
+## Features
+
+- **Centralized License Management**: Track all your business licenses in one place
+- **Automated Renewal Reminders**: Never miss a deadline with smart notifications
+- **Document Storage**: Store and organize all license-related documents
+- **Team Collaboration**: Share access with your team members
+- **Status Tracking**: Color-coded status indicators (Active, Due Soon, Overdue)
+
+## Route Structure
+
+- `/` - Landing page with compelling copy and call-to-action
+- `/dashboard` - Main dashboard (redirects to `/(dashboard)`)
+- `/(dashboard)` - Dashboard layout with sidebar navigation
+- `/(dashboard)/(home)` - Dashboard home page with license overview
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Landing Page
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The landing page addresses key pain points for Indian business owners:
 
-## Learn More
+- **Problem Section**: Highlights the risks of manual tracking, fines, and scattered information
+- **Solution Section**: Showcases the centralized compliance platform
+- **How It Works**: 3-step process to get started
+- **Target Audience**: Specific sections for restaurants, clinics, schools, and retail businesses
+- **Call-to-Action**: Clear path to sign up for free
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js 14 with App Router
+- **Styling**: Tailwind CSS
+- **UI Components**: Custom components with shadcn/ui
+- **Icons**: Lucide React
+- **TypeScript**: Full type safety
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
+The project uses a modern Next.js structure with route groups for better organization:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `app/page.tsx` - Landing page
+- `app/dashboard/page.tsx` - Dashboard redirect
+- `app/(dashboard)/layout.tsx` - Dashboard layout with sidebar
+- `app/(dashboard)/page.tsx` - Main dashboard page
+- `app/(dashboard)/(home)/page.tsx` - Dashboard home content
+- `components/` - Reusable UI components
+- `components/ui/` - shadcn/ui components
